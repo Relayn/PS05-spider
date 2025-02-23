@@ -19,6 +19,18 @@ NEWSPIDER_MODULE = "divanpars.spiders"
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
 
+# Указываем формат экспорта данных (CSV)
+FEED_FORMAT = 'csv'
+
+# Указываем имя файла, в который будут сохраняться данные
+FEED_URI = 'lighting_data.csv'
+
+# Указываем кодировку файла (например, UTF-8)
+FEED_EXPORT_ENCODING = 'utf-8'
+
+# Указываем порядок полей в CSV файле
+FEED_EXPORT_FIELDS = ['name', 'price', 'url']
+
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
 
